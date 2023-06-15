@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* navbar */
+
+.header {
+  background-color: #180344;
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  margin-bottom: 60px;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  height: 3px;
+}
+
+.menu-bar {
+  background-color: #180444;
+  /* height: 50px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  /* color: var(--color-primary); */
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+  background-color: black;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: black;
+}
+
+/* hero section */
+.hero {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-background img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1d1d1f;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #86868b;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  color: white;
+}
+
+/* invest section */
+
+#invest-section {
+  background-color: #F5F5F7;
+}
+.card-img-top {
+  height: 100px;
+  width: 110px;
+  position: relative;
+  left: 20px;
+  top: 18px;
+  right: 217px;
+}
+.card-body a {
+  color: black;
+}
+
+/* second card container */
+.vl {
+  border-left: 1px dotted #dadada;
+  height: 100px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .description {
+  position: relative;
+  /* padding-right: 10px;  */
+}
+
+.row .description:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  /* left: 10px; */
+  height: 90%;
+  width: 1px; /* Width of the vertical line */
+  background-color: #86868b; /* Color of the vertical line */
+}
+
+/* graph section */
+#graph-section{
+  background-color: #F5F5F7;
+  /* height: 100vh; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile section */
+#mobile-section{
+  background-color: #FFFFFF;
+  padding-top: 20px;
+}
+
+
+/* media queries */
+@media (min-width: 1000px){
+  .mobile-img{
+    margin-left: 65px;
+  }
+}
+
+/* testimonials */
+#Testimonials-section{
+  background-color: #F5F5F7;
+  height: auto;
+}
+
+
+.testimonials-clean h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+.item{
+  background-color: #FFFFFF;
+}
+
+@media (max-width:767px) {
+  .testimonials-clean h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+
+.testimonials-clean .people {
+  padding:50px 0 20px;
+}
+
+.testimonials-clean .item {
+  margin-bottom:32px;
+}
+
+@media (min-width:768px) {
+  .testimonials-clean .item {
+    height:220px;
+  }
+}
+
+.testimonials-clean .item .author {
+  margin-top:28px;
+  padding-left:25px;
+}
+
+.testimonials-clean .item .name {
+  font-weight:bold;
+  margin-bottom:2px;
+  color:inherit;
+}
+
+.testimonials-clean .item .title {
+  font-size:13px;
+  color:#9da9ae;
+}
+
+.testimonials-clean .item .description {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+.testimonials-clean .item img {
+  max-width:40px;
+  float:left;
+  margin-right:12px;
+  margin-top:-5px;
+}

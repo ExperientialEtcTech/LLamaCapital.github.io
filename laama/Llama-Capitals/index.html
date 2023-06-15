@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="C:\xampp\htdocs\LAMA\templatemo-edu-meeting.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>lama</title>
+  <script src="C:\Users\USER\Desktop\LAMA\index.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    @media screen and (min-width: 768px) {
+
+      /* Styles for laptops and larger screens */
+      .row-det {
+        justify-content: space-between;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .menu-bar ul li {
+        padding: 10px 15px;
+      }
+
+      .menu-bar ul li a {
+        font-size: 13px;
+      }
+
+      .card {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card1 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mob-text {
+        left: 0;
+        top: -250px;
+      }
+
+      .mob {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    :root {
+      --color-primary: #e4e8ec;
+      --color-white: #e9e9e9;
+      --color-black: #141d28;
+      --color-black-1: #212b38;
+    }
+
+    * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+
+
+    }
+
+    .logo {
+      margin-bottom: 60px;
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+      height: 3px;
+
+    }
+
+    .menu-bar {
+      background-color: #180444;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      position: relative;
+    }
+
+    .menu-bar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu-bar ul li {
+      /* width: 120px; */
+      padding: 10px 30px;
+      /* text-align: center; */
+      position: relative;
+    }
+
+    .menu-bar ul li a {
+      font-size: 15px;
+      color: var(--color-white);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .menu-bar ul li a:hover {
+      color: var(--color-primary);
+    }
+
+    .fas {
+      float: right;
+      margin-left: 10px;
+      padding-top: 3px;
+    }
+
+    /* dropdown menu style */
+    .dropdown-menu {
+      display: none;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: var(--color-black);
+    }
+
+    .menu-bar ul li:hover .dropdown-menu ul {
+      display: block;
+      margin: 10px;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu ul li {
+      width: 150px;
+      padding: 10px;
+    }
+
+    .dropdown-menu-1 {
+      display: none;
+    }
+
+    .dropdown-menu ul li:hover .dropdown-menu-1 {
+      display: block;
+      position: absolute;
+      left: 150px;
+      top: 0;
+      background-color: var(--color-black);
+    }
+
+    .fit-width {
+      width: 100%;
+      height: 350px;
+    }
+
+    .image-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .image-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #212b38;
+      transform: translate(-50%, -50%);
+    }
+
+    b {
+      font-size: 30px;
+    }
+
+    .image-container2 {
+
+      width: 100%;
+      height: 150px;
+      text-align: center;
+    }
+
+    .card {
+      border: 0.10px solid transparent;
+      margin-left: 90%;
+      margin-top: 20%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      width: 100px;
+
+    }
+
+    .card1 {
+      border: 0.10px solid transparent;
+      margin-left: 90%;
+      margin-top: 20%;
+      background-color: #f5f5f7;
+      border-radius: 10px;
+      width: 100px;
+
+    }
+
+    .card-img-top {
+      width: 70px;
+      height: 50px;
+      margin-left: 20px;
+      margin-top: 20px;
+
+    }
+
+    .card-img-top1 {
+      width: 167px;
+      height: 80px;
+    }
+
+    .card-text {
+      text-align: left;
+    }
+
+    .col-3 {
+      margin-bottom: 90px;
+    }
+
+    .main-container {
+      width: 100%;
+      background-color: #f5f5f7;
+      height: 800px;
+    }
+
+    .text-center {
+      justify-content: left;
+      align-items: center;
+    }
+
+    .btn12 {
+      width: 100%;
+      text-align: left;
+    }
+
+    .investment {
+      position: relative;
+      left: 100px;
+      top: -5px;
+    }
+
+    .indian-rupee {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+
+    .container11 {
+      height: 500px;
+      background-color: #ffffff
+    }
+
+    .mob-text {
+      position: relative;
+      left: 50px;
+      top: 100px;
+
+
+    }
+
+    .mob {
+      margin-left: 600px;
+      margin-top: 60px;
+    }
+
+    .desc {
+      font-size: medium;
+    }
+
+    .container12 {
+      height: 500px;
+      background-color: #f5f5f7;
+    }
+
+    .card-img-top2 {
+      width: 40px;
+      height: 40px;
+    }
+
+    p.thicker {
+      font-weight: 600;
+    }
+
+    .row-det {
+      width: 50%;
+      float: left;
+      padding: 20px;
+      display: flex;
+      margin-left: 17%;
+    }
+
+    .card2 {
+      border: 0.10px solid transparent;
+      margin-left: 90%;
+      margin-top: 20%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-bar">
+    <div class="logo">
+      <img src="images/yellow logo.png" />
+    </div>
+    <ul>
+      <li><a href="#">services<i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+
+        </div>
+      </li>
+
+      <li><a href="#">About <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li><a href="#">Support <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+
+        </div>
+      </li>
+
+      <li><a href="#">News & Blogs<i class="fa fa-angle-down"></i></a></li>
+
+    </ul>
+    <a href="#" style="color: white ;"> Sign in</a>
+  </div>
+
+
+
+  <div class="main-container">
+    <div class="image-container">
+      <img src="images/BG 1.png" class="fit-width">
+      <div class="image-content">
+        <b>Optimize your investment returns<br>
+          using our revolutionary platform</b><br><br>
+        <button type="button" class="btn btn-dark">Get Started now</button>
+      </div>
+    </div>
+
+    <div class="image-container2">
+
+      <b>Why invest with Llama Capital?</b><br>
+      Embark on your journey of successful financial growth powered<br>
+      by the right education and empowerment
+      <div class="container">
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="width: 22rem;">
+              <img src="images/cns.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CPS</h5>
+                <p class="card-text">Award-winning Quant Research meets
+                  Artificial Intelligence to bring the first-of-its-
+                  kind results-through-research approach to
+                  the Indian Market.</p>
+                <a href="#" class="btn btn-primary">Explore ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/hf.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hedge Funds</h5>
+                <p class="card-text">Bull or Bear, we have outperformed all
+                  markets with 150% returns in 36 months,
+                  90% of which have been above index.</p><br>
+                <a href="#" class="btn btn-primary">Check out ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/Vector .png" width="20px" height="20px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PMS</h5>
+                <p class="card-text">We ensure enhanced performance with the
+                  help of machine learning and data science-
+                  driven algorithm designed for the Indian
+                  investor.</p>
+                <a href="#" class="btn btn-primary">Check out ></a>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+          
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container2">
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>Discover investment portfolios crafted for<br> moximum returns with effective risk management</b></p>
+      </blockquote>
+
+    </figure>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center" > Innovating finance for the future</h2>
+      </div>
+    </div>
+  </div>
+  <!-- <center> </center> -->
+  <div class="container 10">
+    <div class="row">
+
+      <div class="col-2">
+        <div class="card1" style="width: 15rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee"> <i class="fa fa-rupee"></i>
+              <span>50,000</span>
+            </div>  
+            <div class="investment">
+
+              <span>Min-Investment</span>
+            </div>
+            <div class="trending">
+              <button type="button" class="btn" style="background-color: #A4F6A5; color: #007101;">Trending</button>
+              <button type="button" class="btn" style="background-color: #F8B1A5; color: #9D1700;">High Risk</button>
+            </div>
+            <img src="images/map.png" class="card-img-top1" alt="..." /><br>
+            <a href="#" class="btn12 btn-outline ">View Profile ></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-2">
+        <div class="card1" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee"> <i class="fa fa-rupee"></i>
+              <span>50,000</span>
+            </div>
+            <div class="investment">
+
+              <span>Min-Investment</span>
+            </div>
+            <div class="trending">
+              <button type="button" class="btn" style="background-color: #A4F6A5; color: #007101;">Trending</button>
+              <button type="button" class="btn" style="background-color: #F8B1A5; color: #9D1700;">High Risk</button>
+            </div>
+            <img src="images/map.png" class="card-img-top1" alt="..." /><br>
+    
+      
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card1" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee"> <i class="fa fa-rupee"></i>
+              <span>50,000</span>
+            </div>
+            <div class="investment">
+
+              <span>Min-Investment</span>
+            </div>
+            <div class="trending">
+              <button type="button" class="btn" style="background-color: #A4F6A5; color: #007101;">Trending</button>
+              <button type="button" class="btn" style="background-color: #F8B1A5; color: #9D1700;">High Risk</button>
+            </div>
+            <img src="images/map.png" class="card-img-top1" alt="..." /><br>
+            <a href="#" class="btn12">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card1" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee"> <i class="fa fa-rupee"></i>
+              <span>50,000</span>
+            </div>
+            <div class="investment">
+
+              <span>Min-Investment</span>
+            </div>
+            <div class="trending">
+              <button type="button" class="btn" style="background-color: #A4F6A5; color: #007101;">Trending</button>
+              <button type="button" class="btn" style="background-color: #F8B1A5; color: #9D1700;">High Risk</button>
+            </div>
+            <img src="images/map.png" class="card-img-top1" alt="..." /><br>
+            <a href="#" class="btn12">View Profile ></a><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center ">
+      <button type="view portfolio" class="btn btn-primary" text-align:"center" style="background-color: #D57BC8;">View
+        Portfolio</button>
+    </div>
+
+
+  </div>
+  <div class="container11" style="display:flex;">
+    <div class="mob-photo">
+      <img src="images/v14_3.png" width="200px" height="400px" class="mob" alt="..." /><br>
+    </div>
+    <div class="mob-text">
+      <b>Risk & Goal Profiling</b><br>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed<br>
+        hendrerit tellus in dui dignissim, id aliquet lectus sollicitudin.<br>
+        Vivamus sed sem at velit finibus dignissim a sed erat.<br><br>
+        Aenean rhoncus neque eu dui ultricies, vel consequat metus<br>
+        viverra. Nullam sed fermentum dolor. In pretium lectus et risus<br>
+        finibus posuere. Donec id pulvinar mi,</p><br>
+      <div class="text-center ">
+        <button type="view portfolio" class="btn btn-primary" text-align:"center"
+          style="background-color: #D57BC8;">View Portfolio</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container12">
+    <center><b>Testinomial</b></center>
+    <div class="row-det">
+      <div class="col-4">
+        <div class="card2" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee">
+              <span>Investing in the market is<br>
+                essential in todays<br>
+                economic environment and<br>
+                Wright has come to my<br>
+                rescue!"<br><br><br></span>
+            </div>
+
+
+            <img src="images/man_logo.png" class="card-img-top2" alt="..." /><br><br>
+            <p class="thicker">Tricia Marvin.<br>Chief Operations Associate</p>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card2" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee">
+              <span>Investing in the market is<br>
+                essential in todays<br>
+                economic environment and<br>
+                Wright has come to my<br>
+                rescue!"<br><br><br></span>
+            </div>
+
+
+            <img src="images/man_logo.png" class="card-img-top2" alt="..." /><br><br>
+            <p class="thicker">Tricia Marvin.<br>Chief Operations Associate</p>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card2" style="width: 18rem;">
+
+          <div class="card-body">
+
+            <div class="indian-rupee">
+              <span>Investing in the market is<br>
+                essential in todays<br>
+                economic environment and<br>
+                Wright has come to my<br>
+                rescue!"<br><br><br></span>
+            </div>
+
+
+            <img src="images/man_logo.png" class="card-img-top2" alt="..." /><br><br>
+            <p class="thicker">Tricia Marvin.<br>Chief Operations Associate</p>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lama">
+    <center><b>Grow your wealth with our AI platform.</b></center>
+    <br>
+    <div class="text-center ">
+      <button type="view portfolio" class="btn btn-primary" text-align:"center" style="background-color: #0e0d0e;">Start
+        Investing</button>
+    </div>
+  </div>
+
+
+</body>

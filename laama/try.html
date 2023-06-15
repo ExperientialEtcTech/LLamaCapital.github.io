@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="C:\xampp\htdocs\LAMA\templatemo-edu-meeting.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Education Meeting HTML5 Template</title>
+  <script src="C:\Users\USER\Desktop\LAMA\index.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --color-primary: #e4e8ec;
+      --color-white: #e9e9e9;
+      --color-black: #141d28;
+      --color-black-1: #212b38;
+    }
+
+    * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+
+    }
+
+    .logo {
+      margin-bottom: 60px;
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+      height: 3px;
+
+    }
+
+    .menu-bar {
+      background-color: #180444;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      position: relative;
+    }
+
+    .menu-bar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu-bar ul li {
+      /* width: 120px; */
+      padding: 10px 30px;
+      /* text-align: center; */
+      position: relative;
+    }
+
+    .menu-bar ul li a {
+      font-size: 15px;
+      color: var(--color-white);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .menu-bar ul li a:hover {
+      color: var(--color-primary);
+    }
+
+    .fas {
+      float: right;
+      margin-left: 10px;
+      padding-top: 3px;
+    }
+
+    /* dropdown menu style */
+    .dropdown-menu {
+      display: none;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: var(--color-black);
+    }
+
+    .menu-bar ul li:hover .dropdown-menu ul {
+      display: block;
+      margin: 10px;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu ul li {
+      width: 150px;
+      padding: 10px;
+    }
+
+    .dropdown-menu-1 {
+      display: none;
+    }
+
+    .dropdown-menu ul li:hover .dropdown-menu-1 {
+      display: block;
+      position: absolute;
+      left: 150px;
+      top: 0;
+      background-color: var(--color-black);
+    }
+
+    .fit-width {
+      width: 100%;
+      height: 350px;
+    }
+
+    .image-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .image-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #212b38;
+      transform: translate(-50%, -50%);
+    }
+
+    b {
+      font-size: 30px;
+    }
+
+    .v1 {
+      border-left: 1px solid green;
+      height: 50px;
+      position: relative;
+      left: 50px;
+      top: 30px;
+    }
+
+    .indian-rupee {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+
+    .investment {
+      position: relative;
+      left: 100px;
+      top: -5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-bar">
+    <div class="logo">
+      <img src="images/yellow logo.png" />
+    </div>
+    <ul>
+      <li><a href="#">services<i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+
+        </div>
+      </li>
+
+      <li><a href="#">About <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li><a href="#">Support <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+
+
+            <li><a href="#">News & Blogs</a></li>
+          </ul>
+
+        </div>
+      </li>
+
+      <li><a href="#">News & Blogs<i class="fa fa-angle-down"></i></a></li>
+
+    </ul>
+    <a href="#" style="color: white ;"> Sign in</a>
+  </div>
+
+
+  </img>
+
+  <div class="image-container">
+    <img src="images/BG 1.png" class="fit-width">
+    <div class="image-content">
+      <b>Optimize your investment returns<br>
+        using our revolutionary platform</b><br><br>
+      <button type="button" class="btn btn-dark">Get Started now</button>
+    </div>
+  </div>
+  <!-- cards section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="card" style="width: 18rem;background-color: #F5F5F7;  ">
+          <div class="indian-rupee"> <i class="fa-solid fa-indian-rupee-sign"></i>
+            <span>50,000</span>
+          </div>
+          <div class="investment">
+
+            <span>min-investment</span>
+          </div>
+          <span class="v1"></span>
+          <img src="./images/Vector.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p> -->
+            <a href="#" class="btn btn-link" style="text-decoration: none;">View Portfolio</a>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;background-color: #F5F5F7;  ">
+          <div class="indian-rupee"> <i class="fa-solid fa-indian-rupee-sign"></i>
+            <span>50,000</span>
+          </div>
+          <div class="investment">
+
+            <span>min-investment</span>
+          </div>
+          <span class="v1"></span>
+          <img src="./images/Vector.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p> -->
+            <a href="#" class="btn btn-link" style="text-decoration: none;">View Portfolio</a>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;background-color: #F5F5F7;  ">
+          <div class="indian-rupee"> <i class="fa-solid fa-indian-rupee-sign"></i>
+            <span>50,000</span>
+          </div>
+          <div class="investment">
+
+            <span>min-investment</span>
+          </div>
+          <span class="v1"></span>
+          <img src="./images/Vector.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p> -->
+            <a href="#" class="btn btn-link" style="text-decoration: none;">View Portfolio</a>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;background-color: #F5F5F7;  ">
+          <div class="indian-rupee"> <i class="fa-solid fa-indian-rupee-sign"></i>
+            <span>50,000</span>
+          </div>
+          <div class="investment">
+
+            <span>min-investment</span>
+          </div>
+          <span class="v1"></span>
+          <img src="./images/Vector.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p> -->
+            <a href="#" class="btn btn-link" style="text-decoration: none;">View Portfolio</a>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////////////////////////////////////////////////// -->
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="img/cns.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CPS</h5>
+                <p class="card-text">Award-winning Quant Research meets
+                  Artificial Intelligence to bring the first-of-its-
+                  kind results-through-research approach to
+                  the Indian Market.</p>
+                <a href="#" class="btn btn-primary">Explore ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="img/hf.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hedge Funds</h5>
+                <p class="card-text">Bull or Bear, we have outperformed all
+                  markets with 150% returns in 36 months,
+                  90% of which have been above index.</p>
+                <a href="#" class="btn btn-primary">Check out ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Vector .png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PMS</h5>
+                <p class="card-text">We ensure enhanced performance with the
+                  help of machine learning and data science-
+                  driven algorithm designed for the Indian
+                  investor.</p>
+                <a href="#" class="btn btn-primary">Check out ></a>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+
+      </div>
+    </div>
+    <!-- testimonials -->
+    
+</body>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+
+<style>
+    /* Phones */
+    @media (max-width: 767px) {
+        /* Styles for phones */
+    }
+
+    /* Tablets */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        /* Styles for tablets */
+
+
+
+    }
+
+
+
+    #stroke {
+        position: absolute;
+        left: 195px;
+        right: 2.17px;
+        top: 310px;
+        bottom: 7.669px;
+    }
+    #rocket {
+         position: relative;
+        width: 80px;
+        height: 80px;
+        left: 140px;
+        top: 350px;
+
+        background: url(rocket1.png);
+        /* transform: rotate(-45deg); */
+
+    }
+    #feedback {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        left: 450px;
+        top: 160px;
+
+        background: url(feedback.png);
+    }
+
+
+    #analysis {
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        left: 870px;
+        top: 370px;
+
+        background: url(analysis.png);
+
+    }
+
+    #follow {
+
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 1200px;
+        top: 230px;
+
+        background: url(follow.png);
+    }
+
+    #dot1 {
+        position: absolute;
+        left: 180px;
+        right: 13.7px;
+        top: 450px;
+
+    }
+
+    #dot2 {
+         position: absolute;
+        left: 470px;
+        right: 10.341px;
+        top: 300px;
+
+    }
+
+    #dot3 {
+        /* position: absolute;
+        left: 65.16%;
+        right: 36.68%;
+        top: 67.83%; */
+
+
+        position: absolute;
+        left: 888px;
+        right: 5.869px;
+        top: 440px;
+    }
+
+    #dot4 {
+        /* position: absolute;
+        left: 89.71%;
+        right: 13.14%;
+        top: 46.96%; */
+
+        position: absolute;
+        left: 1230px;
+        right: 2.102px;
+        top: 300px;
+
+
+
+    }
+
+
+
+    h1 {
+
+        position: absolute;
+        width: 743px;
+        height: 44px;
+        left: 300px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #1D1D1F;
+
+    }
+
+    #intro {
+        position: absolute;
+        width: 843.9px;
+        height: 22px;
+        left: 250px;
+        top: 160px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #86868B;
+
+    }
+
+    #consignup {
+        position: absolute;
+        width: 211px;
+        height: 77px;
+        left: 180px;
+        top: 500px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.7396px;
+        line-height: 19px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+
+        color: #0E1513;
+
+
+
+
+    }
+
+    #conrisk {
+        position: absolute;
+        width: 211px;
+        height: 77px;
+        left: 405px;
+        top: 360px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.7396px;
+        line-height: 19px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #0E1513;
+
+    }
+
+    #conport {
+        position: absolute;
+        width: 211px;
+        height: 77px;
+        left: 820px;
+        top: 500px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.7396px;
+        line-height: 19px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #0E1513;
+
+    }
+
+    #consub {
+        position: absolute;
+        width: 211px;
+        height: 77px;
+        left: 1140px;
+        top: 400px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.7396px;
+        line-height: 19px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+
+        color: #0E1513;
+
+
+
+    }
+
+
+
+
+
+
+    #sign {
+        position: absolute;
+        width: 59px;
+        height: 22px;
+        left: 180px;
+        top: 450px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+
+        color: #1D1D1D;
+    }
+
+    #signup {
+        position: absolute;
+        width: 180px;
+        height: 0px;
+        left: 179px;
+        top: 500px;
+
+        border: 1px solid #000000;
+
+
+    }
+
+   
+
+    #risk {
+        position: absolute;
+        width: 95px;
+        height: 22px;
+        left: 450px;
+        top: 310px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #1D1D1D;
+
+    }
+
+    #riskprofile {
+        position: absolute;
+        width: 209px;
+        height: 0px;
+        left: 405px;
+        top: 360px;
+
+        border: 1px solid #000000;
+    }
+
+    #port {
+        position: absolute;
+        width: 150px;
+        height: 22px;
+        left: 850px;
+        top: 435px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #1D1D1D;
+
+
+
+
+    }
+
+    #expportfolio {
+
+
+        position: absolute;
+        width: 209px;
+        height: 0px;
+        left: 825px;
+        top: 490px;
+
+        border: 1px solid #000000;
+
+    }
+
+    #sub {
+        position: absolute;
+        width: 150px;
+        height: 22px;
+        left: 1185px;
+        top: 320px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #1D1D1D;
+
+    }
+
+    #subscription {
+        position: absolute;
+        width: 160px;
+        height: 0px;
+        left: 1185px;
+        top: 380px;
+
+        border: 1px solid #000000;
+
+    }
+
+
+
+
+
+
+
+
+    /* #Center{
+        top: 30.96%;
+
+
+    } */
+</style>
+
+<body>
+
+    <h1>Start your high-reward investment journey</h1>
+    <p id="intro">Your perfect investment is just a few clicks away. Learn to invest the right way for minimal risk and
+        maximum
+        returns.</p>
+
+    <h5 id="sign">Signup</h5>
+    <hr id="signup">
+    <p id="consignup">Your perfect investment is just a few clicks away. Learn to invest the right way for minimal risk
+        and maximum returns.</p>
+
+    </hr>
+
+    <h5 id="risk">Risk Profile</h5>
+    <hr id="riskprofile">
+    <p id="conrisk">Your perfect investment is just a few clicks away. Learn to invest the right way for minimal risk
+        and maximum returns.</p>
+    </hr>
+
+    <div class="container">
+        <h5 id="port">Explore Portfolios</h5>
+        <hr id="expportfolio">
+        <p id="conport">Your perfect investment is just a few clicks away. Learn to invest the right way for minimal
+            risk and maximum returns.</p>
+        </hr>
+    </div>
+
+    <div class="container">
+        <h5 id="sub">Subscription</h5>
+        <hr id="subscription">
+        <p id="consub">Your perfect investment is just a few clicks away. Learn to invest the right way for minimal
+            risk and maximum returns.</p>
+        </hr>
+    </div>
+
+
+
+
+
+
+    <!-- Add the below all wrap it up in a container -->
+    <div class="container" id="Center">
+
+
+        <div class="container" id="rocket">
+            <!-- <img src="rocket 1.png" alt=""> -->
+
+        </div>
+
+        <div class="container" id="feedback">
+            <!-- <img src="feedback.png" alt=""> -->
+
+        </div>
+
+        <div class="container" id="analysis">
+            <!-- <img src="feedback.png" alt=""> -->
+
+        </div>
+        <div class="container" id="follow">
+            <!-- <img src="feedback.png" alt=""> -->
+
+        </div>
+        <div class="container" id="dot1">
+            <img src="dot1.png" alt="">
+
+        </div>
+        <div class="container" id="dot2">
+            <img src="dot2.png" alt="">
+
+        </div>
+        <div class="container" id="dot3">
+            <img src="dot3.png" alt="">
+
+        </div>
+        <div class="container" id="dot4">
+            <img src="dot4.png" alt="">
+
+        </div>
+
+
+
+
+        <div class="container" id="stroke">
+            <img src="stroke2.png" alt="">
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
